@@ -23,6 +23,10 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
-class Minitest::Unit::TestCase
-  include FactoryBot::Syntax::Methods
+module Minitest
+  module Unit
+    class TestCase
+      include FactoryBot::Syntax::Methods
+    end
+  end
 end

@@ -53,4 +53,6 @@ group :test do
   gem 'shoulda', '~> 4.0'
 end
 
+gem 'jsonapi-resources'
+gem 'rack-cors'
 gem 'rubocop', require: false

@@ -89,6 +89,10 @@ GEM
     irb (1.4.2)
       reline (>= 0.3.0)
     json (2.6.2)
+    jsonapi-resources (0.10.7)
+      activerecord (>= 4.1)
+      concurrent-ruby
+      railties (>= 4.1)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -117,6 +121,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4)
@@ -188,7 +194,9 @@ DEPENDENCIES
   bootsnap
   debug
   factory_bot_rails
+  jsonapi-resources
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.4)
   rubocop
   shoulda (~> 4.0)
