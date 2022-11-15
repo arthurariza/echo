@@ -48,4 +48,8 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+  gem 'shoulda', '~> 4.0'
+end
+
 gem 'rubocop', require: false
