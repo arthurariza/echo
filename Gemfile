@@ -57,4 +57,4 @@ gem 'jsonapi-resources'
 gem 'rack-cors'
 gem 'rubocop', require: false
 
-gem "pg", "~> 1.4"
+gem 'pg', '~> 1.4'
