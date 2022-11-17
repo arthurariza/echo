@@ -32,7 +32,7 @@ class MockController < ApplicationController
             "errors": [
                 {
                     "code": "not_found",
-                    "detail": "Requested page `#{params[:mock]}` does not exist"
+                    "detail": "Requested page `/#{params[:mock]}` does not exist"
                 }
             ]
         }
