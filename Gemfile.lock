@@ -117,6 +117,7 @@ GEM
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
+    pg (1.4.4)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -195,6 +196,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   jsonapi-resources
+  pg (~> 1.4)
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.4)

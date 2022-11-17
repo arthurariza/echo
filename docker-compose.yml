@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  database:
+    container_name: echo_postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: echo
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./tmp/postgres-data:/var/lib/postgresql/data
+volumes:
+  postgres-data:
