@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_15_224526) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_17_023520) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "endpoints", force: :cascade do |t|
     t.string "verb"
     t.string "path"
-    t.text "response"
+    t.jsonb "response"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
