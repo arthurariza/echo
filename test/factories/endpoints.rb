@@ -2,8 +2,12 @@
 
 FactoryBot.define do
   factory :endpoint do
-    verb { 'MyString' }
-    path { 'MyString' }
-    response { 'MyText' }
+    verb { 'GET' }
+    path { '/test' }
+    response do
+      {
+        'code' => 200
+      }
+    end
   end
 end

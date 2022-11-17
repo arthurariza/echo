@@ -22,11 +22,3 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
-
-module Minitest
-  module Unit
-    class TestCase
-      include FactoryBot::Syntax::Methods
-    end
-  end
-end
